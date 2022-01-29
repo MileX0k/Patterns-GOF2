@@ -82,61 +82,6 @@ namespace MyTools {
         return string(buf);
     }
 
-    /*class FileLoggerSingletone
-    {
-    public:
-
-        static FileLoggerSingletone& getInstance()
-        {
-            static FileLoggerSingletone theInstance;
-            return theInstance;
-        }
-
-        void __fastcall OpenLogFile(const string& FN)
-        {
-            logOut.open(FN, ios_base::out);
-        }
-
-        void CloseLogFile()
-        {
-            if (logOut.is_open())
-            {
-                logOut.close();
-            }
-        }
-
-        void __fastcall WriteToLog(const string& str)
-        {
-            if (logOut.is_open())
-            {
-                logOut << GetCurDateTime() << " - " << str << endl;
-            }
-        }
-
-        void __fastcall WriteToLog(const string& str, int n)
-        {
-            if (logOut.is_open())
-            {
-                logOut << GetCurDateTime() << " - " << str << n << endl;
-            }
-        }
-
-        void __fastcall WriteToLog(const string& str, double d)
-        {
-            if (logOut.is_open())
-            {
-                logOut << GetCurDateTime() << " - " << str << d << endl;
-            }
-        }
-
-    private:
-
-        FileLoggerSingletone() {};
-        FileLoggerSingletone(const FileLoggerSingletone& root) = delete;
-        FileLoggerSingletone& operator=(const FileLoggerSingletone&) = delete;
-    };*/
-
-
     void __fastcall OpenLogFile(const string& FN)
     {
         logOut.open(FN, ios_base::out);
